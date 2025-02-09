@@ -29,13 +29,18 @@ export const HeroSection = () => {
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`We're more than just a tool, we're a community of passionate
+            {`We're a community of passionate
             creators. Get access to exclusive resources, tutorials, and support.`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button className="w-5/6 md:w-full rounded-b-full font-nippoBold text-2xl w-full group/arrow opacity-100 text-black hover:opacity-80 border-2 border-white">
-              Join the Club
+                            <Link
+                href="https://whop.com/dedevs"
+                target="_blank"
+              >
+                Join the Club
+              </Link>
               {/* <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" /> */}
             </Button>
 
