@@ -22,36 +22,36 @@ interface PlanProps {
   buttonText: string;
   benefitList: string[];
 }
+/* Members enhance career prospects through industry insights, technical skill development, and community support in blockchain and AI engineering */
 
 const plans: PlanProps[] = [
   {
-    title: "Free",
+    title: "Club",
     popular: 0,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Blockchain and AI Technology Club",
+    buttonText: "Join Free",
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
+      "Gated Discord",
+      "Community Chat",
+      "Tailored News Feed", 
+      "Daily Reward Wheel",
     ],
   },
+  /* Join to access courses that provide practical applications for building decentralized agents, LLMs, AI bots, websites, and more. Our courses are designed to grow your portfolio. */
   {
-    title: "Premium",
+    title: "Academy",
     popular: 1,
-    price: 45,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+    price: 50,
+    description: "Courses to Build Your Portfolio",
     buttonText: "Get starterd",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
-      "Priority support",
-      "AI assistance",
+      "Masterclasses",
+      "Office Hours",
+      "20+ Dev. Tools",
+      "Code Templates",
+      "100+ Resources",
     ],
   },
 ];
@@ -64,7 +64,7 @@ export const PricingSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+        Gain Access
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
