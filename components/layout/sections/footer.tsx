@@ -6,7 +6,7 @@ export const FooterSection = () => {
   return (
     <footer id="footer" className="container py-24 sm:py-32">
       <div className="p-10 bg-card border border-secondary rounded-2xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
               {/* <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" /> */}
@@ -17,14 +17,14 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
+              <Link href="mailto:admin@dedevs.club" className="opacity-60 hover:opacity-100">
+                admin@dedevs.club
               </Link>
             </div>
 
             <div>
               <Link href="https://x.com/DeDevsClub" className="opacity-60 hover:opacity-100">
-                Twitter
+                @DeDevsClub
               </Link>
             </div>
 
@@ -56,7 +56,7 @@ export const FooterSection = () => {
             </div>
           </div> */}
 
-          <div className="flex flex-col gap-2">
+          {/* <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Help</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
@@ -76,17 +76,19 @@ export const FooterSection = () => {
               </Link>
             </div>
           </div>
-
+*/}
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Socials</h3>
             <div>
-              <Link href="https://x.com/DeDevsClub" className="opacity-60 hover:opacity-100">
+              <Link href="https://x.com/DeDevsClub" className="opacity-60 hover:opacity-100" target="_blank">
                 Twitter
               </Link>
             </div>
 
             <div>
-              <Link href="https://discord.gg/Pt7rpqbr98" className="opacity-60 hover:opacity-100">
+              <Link href="https://discord.gg/Pt7rpqbr98" className="opacity-60 hover:opacity-100" target="_blank">
+
+
                 Discord
               </Link>
             </div>
