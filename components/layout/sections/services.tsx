@@ -17,26 +17,26 @@ interface ServiceProps {
 }
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: "Blockchain Developers",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+      "Blockchain developers seeking AI integrations, networking opportunities, and involvement in cutting-edge projects.",
     pro: 0,
   },
   {
-    title: "Social Media Integrations",
+    title: "AI Engineers",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "AI/ML experts seeking to integrate agents to blockchain projects while expanding knowledge of distributed systems.",
     pro: 0,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
+    title: "Technology Enthusiasts",
+    description: "Those interested in recent events in AI and low-code solutions to unlock AI superpowers in an intuitive and seamless manner.",
     pro: 0,
   },
   {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
+    title: "Crypto Traders",
+    description: "Fascinated by emergent technologies and how they can benefit from advanced crypto trading strategies that leverage AI.",
+    pro: 0,
   },
 ];
 
@@ -44,15 +44,14 @@ export const ServicesSection = () => {
   return (
     <section id="services" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Services
+        Community
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
+        Who are we for?
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+        From marketing and sales to operations and engineering, we have experts from all walks of life. 
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
