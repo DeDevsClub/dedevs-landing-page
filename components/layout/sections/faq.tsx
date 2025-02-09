@@ -13,32 +13,32 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "What is DeDevs Club?",
+    answer: "Developer community uniting blockchain and AI experts for knowledge sharing, collaboration, and innovative project ideation.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "What makes DeDevs Club unique compared to other tech communities?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Our community specifically focuses on the intersection of blockchain and AI and we emphasize practical skill development.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+      "How can I collaborate with other members?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "Members can participate in forums, join project teams, and participate in open source projects via our GitHub Org: DeDevsClub.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Do I need to be an expert in both blockchain and AI to join?",
+    answer: "No, many of our members are experts in one field or are simply enthusiasts looking to expand their knowledge.",
     value: "item-4",
   },
   {
     question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+      "What kind of resources and opportunities does DeDevs Club provide?",
+    answer: "Networking opportunities, collaborative projects, learning resources, and curated industry updates.",
     value: "item-5",
   },
 ];
@@ -48,7 +48,7 @@ export const FAQSection = () => {
     <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          FAQS
+          FAQs
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
