@@ -42,9 +42,9 @@ export default function Home() {
 		<>
 			<HeroSection />
 			{/* <SponsorsSection /> */}
-			<BenefitsSection />
-			<FeaturesSection />
-			{/* <ServicesSection /> */}
+			{/* <BenefitsSection /> */}
+			{/* <FeaturesSection /> */}
+			 <ServicesSection /> 
 			{/* <TestimonialSection /> */}
 			{/* <TeamSection /> */}
 			{/* <CommunitySection /> */}
