@@ -46,13 +46,13 @@ const plans: PlanProps[] = [
     popular: 1,
     price: 50,
     description: "Courses to Build Your Portfolio",
-    buttonText: "Get starterd",
+    buttonText: "https://whop.com/dedevs-academy",
     benefitList: [
       "Masterclasses",
-      "Office Hours",
       "20+ Dev. Tools",
       "Code Templates",
       "100+ Resources",
+      "+ Club Benefits"
     ],
   },
 ];
