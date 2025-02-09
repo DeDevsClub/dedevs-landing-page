@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 enum PopularPlan {
   NO = 0,
@@ -31,7 +32,7 @@ const plans: PlanProps[] = [
     price: 0,
     description:
       "Blockchain and AI Technology Club",
-    buttonText: "Join Free",
+    buttonText: "https://whop.com/dedevs",
     benefitList: [
       "Gated Discord",
       "Community Chat",
@@ -106,14 +107,17 @@ export const PricingSection = () => {
               </CardContent>
 
               <CardFooter>
+<Link href={buttonText} target="_blank">
                 <Button
                   variant={
                     popular === PopularPlan?.YES ? "default" : "secondary"
                   }
                   className="w-full"
                 >
-                  {buttonText}
+
+                  {"Join Today"}
                 </Button>
+</Link>
               </CardFooter>
             </Card>
           )
