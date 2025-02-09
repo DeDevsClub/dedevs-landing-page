@@ -1,8 +1,9 @@
 {
-  "name": "shadcn-landing-page",
+  "name": "dedevs-landing-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "bdev": "next build && next dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

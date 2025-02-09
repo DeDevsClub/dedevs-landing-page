@@ -54,21 +54,6 @@ const plans: PlanProps[] = [
       "AI assistance",
     ],
   },
-  {
-    title: "Enterprise",
-    popular: 0,
-    price: 120,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
-    benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
-    ],
-  },
 ];
 
 export const PricingSection = () => {

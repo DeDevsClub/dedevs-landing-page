@@ -17,7 +17,12 @@ module.exports = {
       center: true,
       padding: "1.5rem",
       screens: {
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
         "2xl": "1400px",
+        "3xl": "1600px",
       },
     },
     extend: {
@@ -86,6 +91,11 @@ module.exports = {
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
       },
+    },
+    fontFamily: {
+      nippo: ["Nippo", "sans-serif"],
+      nippoBold: ["Nippo Bold", "sans-serif"],
+      nippoMedium: ["Nippo Medium", "sans-serif"],
     },
   },
   plugins: [animate],

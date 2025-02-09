@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
+// import { ChevronsDownIcon } from "lucide-react";
 import Link from "next/link";
 
 export const FooterSection = () => {
@@ -9,9 +9,8 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
-              <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
-
-              <h3 className="text-2xl">Shadcn</h3>
+              {/* <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" /> */}
+              <h3 className="text-2xl">DeDevs</h3>
             </Link>
           </div>
 
@@ -24,19 +23,19 @@ export const FooterSection = () => {
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="https://x.com/DeDevsClub" className="opacity-60 hover:opacity-100">
                 Twitter
               </Link>
             </div>
 
-            <div>
+            {/* <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 Instagram
               </Link>
-            </div>
+            </div> */}
           </div>
 
-          <div className="flex flex-col gap-2">
+          {/* <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Platforms</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
@@ -55,7 +54,7 @@ export const FooterSection = () => {
                 Web
               </Link>
             </div>
-          </div>
+          </div> */}
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Help</h3>
@@ -81,20 +80,14 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Socials</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
+              <Link href="https://x.com/DeDevsClub" className="opacity-60 hover:opacity-100">
+                Twitter
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="https://discord.gg/Pt7rpqbr98" className="opacity-60 hover:opacity-100">
                 Discord
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
               </Link>
             </div>
           </div>
@@ -103,13 +96,13 @@ export const FooterSection = () => {
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
-            &copy; 2024 Designed and developed by
+            &copy; 2025 Enchanted by
             <Link
               target="_blank"
-              href="https://github.com/leoMirandaa"
+              href="https://github.com/BunsDev"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
             >
-              Leo Miranda
+              Buns
             </Link>
           </h3>
         </section>

@@ -14,6 +14,17 @@ const nextConfig = {
         protocol: "https",
         hostname: "github.com",
       },
+      {
+        protocol: "https",
+        hostname: "dedevs.club",
+      },
+    ],
+    domains: [
+      "dedevs.club", 
+      "avatars.githubusercontent.com",
+      "img-v2-prod.whop.com",
+      "whop-cdn.com",
+      "whop.com"
     ],
   },
 };

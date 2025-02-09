@@ -26,53 +26,12 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
+    image: "https://img-v2-prod.whop.com/rXlBu3qvbgUCLrfbxBy8Y4OsR4JYbHyg7wMrFu0EkMQ/rs:fill:48:48/el:1/aHR0cHM6Ly9hc3NldHMud2hvcC5jb20vdXBsb2Fkcy8yMDI1LTAxLTI0L3VzZXJfODMxMzM3Nl8yMjg5ODc5MC01OGNhLTRmYWMtOTk2ZS1hZDQ0Y2U5NDg2MDguanBlZw",
+    name: "George",
     userName: "Product Manager",
-    comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+    comment: "DeDevs Club is an absolute game changer for anyone looking to advance their career in blockchain and AI engineering. The wealth of industry insights provided is unparalleled, keeping me up-to-date with the latest trends and breakthroughs. The technical skill development modules are expertly designed, offering hands-on experience and deep dives into complex concepts that have significantly enhanced my proficiency. \
+    What truly sets this app apart, though, is the vibrant community support. Networking with like-minded professionals and industry leaders has been invaluable for my personal and professional growth. The collaborative environment fosters knowledge sharing and mentorship, creating an enriching learning experience.",
     rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
-    rating: 4.8,
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    rating: 4.9,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
   },
 ];
 
@@ -85,7 +44,7 @@ export const TestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          Hear What Our Members Say
         </h2>
       </div>
 
