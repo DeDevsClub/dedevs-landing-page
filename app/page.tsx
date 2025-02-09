@@ -47,11 +47,11 @@ export default function Home() {
 			{/* <ServicesSection /> */}
 			{/* <TestimonialSection /> */}
 			{/* <TeamSection /> */}
-			<CommunitySection />
+			{/* <CommunitySection /> */}
 			<PricingSection />
 			{/* <ContactSection /> */}
 			<FAQSection />
-			<FooterSection />
+			{/* <FooterSection /> */}
 		</>
 	);
 }
