@@ -67,10 +67,9 @@ export const PricingSection = () => {
         Gain Access
       </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
+      {/* <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
         Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
-      </h3>
-
+      </h3> */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
         {plans.map(
           ({ title, popular, price, description, buttonText, benefitList }) => (
