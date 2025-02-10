@@ -74,7 +74,7 @@ export const PricingSection = () => {
 			{/* <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
         Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
       </h3> */}
-      			<div className="sm:container sm:mx-12 -space-x-1 sm:space-x-12 flex flex-cols-1 sm:grid sm:grid-cols-2 sm:gap-8 lg:gap-4 sm:w-[84vw] max-w-screen-2xl sm:my-12 justify-center">
+      			<div className="sm:container -space-x-1 sm:space-x-12 grid grid-cols-1 sm:grid-cols-2 lg:gap-4 sm:w-[84vw] max-w-screen-2xl sm:my-12 justify-center">
 
 			{/* <div className="mt-2 sm:container sm:mx-12 sm:space-x-12 flex flex-col sm:grid sm:grid-cols-2  
         gap-8 sm:grid-cols-2 sm:gap-8 lg:gap-4 w-full sm:w-[84vw] max-w-screen-2xl sm:my-12 justify-center"> */}
@@ -84,11 +84,9 @@ export const PricingSection = () => {
 							key={title}
 							className={
 								popular === PopularPlan?.YES
-                ? `md:scale-[1.1] border-gradient-to-r from-primary via-primary/70 to-primary animate-pulse 
-                  border-primary border-2 w-full`
-                : ""
-								// 	? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary lg:scale-[1.1]"
-								// 	: ""
+                ? `lg:scale-[1.1] border-gradient-to-r from-primary via-primary/70 to-primary animate-pulse
+                border-primary border-2 w-full sm:w-[48vw]`
+                : ''
 							}
 							style={{
 								backgroundColor: "rgba(26, 26, 26, 0.8)",
