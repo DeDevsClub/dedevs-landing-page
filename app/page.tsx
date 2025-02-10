@@ -55,12 +55,12 @@ const pages: Page[] = [
 		bgColor: "bg-black/90",
 		hideOnMobile: false,
 	},
-	{
-		page: <ApplicationsSection />,
-		name: "Applications",
-		bgColor: "bg-black/90",
-		hideOnMobile: false,
-	},
+	// {
+	// 	page: <ApplicationsSection />,
+	// 	name: "Applications",
+	// 	bgColor: "bg-black/90",
+	// 	hideOnMobile: false,
+	// },
 	{
 		page: <TechSection />,
 		name: "Techonologies",
