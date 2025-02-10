@@ -9,6 +9,7 @@ function XIcon(props: SVGProps<SVGSVGElement> | undefined) {
       xmlns="http://www.w3.org/2000/svg"
       className="fill-foreground"
       aria-labelledby="xIconTitle"
+      fill="currentColor"
       role="img"
       {...props}
     >

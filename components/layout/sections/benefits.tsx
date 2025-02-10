@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
-
+import { ReactIcon } from "@/components/ui/icon";
+import type { icons } from "lucide-react";
 interface BenefitsProps {
   icon: string;
   title: string;
@@ -11,58 +10,57 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
-    title: "Build Brand Trust",
+    title: "Community Forum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Our community forum, which allows our members to communicate in an organized manner.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Community Chat",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Native community chat for our community to collaborate and communicate with one another.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "News Feed",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "View timeline of tweets from DeDevsClub about blockchain and AI development and news.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "Wallet",
+    title: "Discord Server",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Get access to our exclusive Discord server and interact with the rest of the community.",
   },
 ];
 
 export const BenefitsSection = () => {
   return (
-    <section id="benefits" className="container py-24 sm:py-32">
-      <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
+    <section id="benefits" className="container sm:py-18 bg-primary/20 rounded-[20px] p-4">
+      <div className="grid lg:grid-cols-2 place-items-center lg:gap-24 bg-black/60 rounded-[20px] p-4">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Member Benefits</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Our Applications
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+          <p className="text-xl text-white mb-8 bg-primary/20 font-bespokeStencil rounded-[20px] p-4">
+            DeDevs Club is a community of developers who learn and grow together.
+            We offer a range of benefits to help you succeed. Join DeDevs Club today and start your journey to success.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-4 w-full">
+        <div className="grid lg:grid-cols-2 gap-2 w-full">
           {benefitList.map(({ icon, title, description }, index) => (
             <Card
               key={title}
-              className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
+              className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number rounded-[20px]"
             >
               <CardHeader>
                 <div className="flex justify-between">
-                  <Icon
+                  <ReactIcon
                     name={icon as keyof typeof icons}
-                    size={32}
+                    size={36}
                     color="hsl(var(--primary))"
                     className="mb-6 text-primary"
                   />

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
-
+import type { icons } from "lucide-react";
+import { LucideIcon } from "@/components/ui/icon";
+import { styles } from "@/app/styles";
 interface FeaturesProps {
   icon: string;
   title: string;
@@ -49,7 +49,7 @@ const featureList: FeaturesProps[] = [
 
 export const FeaturesSection = () => {
   return (
-    <section id="features" className="container py-24 sm:py-32">
+		<section id="features" className={`${styles.section} w-full`}>
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         Features
       </h2>
@@ -70,7 +70,7 @@ export const FeaturesSection = () => {
             <Card className="h-full bg-background border-0 shadow-none">
               <CardHeader className="flex justify-center items-center">
                 <div className="bg-primary/20 p-2 rounded-full ring-8 ring-primary/10 mb-4">
-                  <Icon
+                  <LucideIcon
                     name={icon as keyof typeof icons}
                     size={24}
                     color="hsl(var(--primary))"

@@ -1,3 +1,4 @@
+import { styles } from "@/app/styles";
 import {
   Accordion,
   AccordionContent,
@@ -45,13 +46,13 @@ const FAQList: FAQProps[] = [
 
 export const FAQSection = () => {
   return (
-    <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
+		<section id="faq" className={`${styles.section} w-full`}>
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+        <h2 className={`text-lg text-primary text-center mb-2 tracking-wider ${styles.topHeader}`}>
           FAQs
         </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold">
+        <h2 className={`text-3xl md:text-4xl text-center font-bold ${styles.bottomHeader}`}>
           Common Questions
         </h2>
       </div>
@@ -59,7 +60,7 @@ export const FAQSection = () => {
       <Accordion type="single" collapsible className="AccordionRoot">
         {FAQList.map(({ question, answer, value }) => (
           <AccordionItem key={value} value={value}>
-            <AccordionTrigger className="text-left">
+            <AccordionTrigger className="text-left text-white font-bold text-xl">
               {question}
             </AccordionTrigger>
 

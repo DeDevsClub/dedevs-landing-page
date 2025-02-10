@@ -1,4 +1,5 @@
 "use client";
+import { styles } from "@/app/styles";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Card,
@@ -26,7 +27,7 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://img-v2-prod.whop.com/rXlBu3qvbgUCLrfbxBy8Y4OsR4JYbHyg7wMrFu0EkMQ/rs:fill:48:48/el:1/aHR0cHM6Ly9hc3NldHMud2hvcC5jb20vdXBsb2Fkcy8yMDI1LTAxLTI0L3VzZXJfODMxMzM3Nl8yMjg5ODc5MC01OGNhLTRmYWMtOTk2ZS1hZDQ0Y2U5NDg2MDguanBlZw",
+    image: "https://dedevs.club/images/testimonials/0xfrenzy.png",
     name: "George",
     userName: "Product Manager",
     comment: "DeDevs Club is an absolute game changer for anyone looking to advance their career in blockchain and AI engineering. The wealth of industry insights provided is unparalleled, keeping me up-to-date with the latest trends and breakthroughs. The technical skill development modules are expertly designed, offering hands-on experience and deep dives into complex concepts that have significantly enhanced my proficiency. \
@@ -37,14 +38,14 @@ const reviewList: ReviewProps[] = [
 
 export const TestimonialSection = () => {
   return (
-    <section id="testimonials" className="container py-24 sm:py-32">
+    <section id="testimonials" className="container py-8 sm:py-12">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Testimonials
+        <h2 className={`text-lg text-primary text-center mb-2 tracking-wider ${styles.topHeader}`}>
+          Word on the Street
         </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our Members Say
+        <h2 className={`text-3xl md:text-4xl text-center font-bold mb-4 ${styles.bottomHeader}`}>
+          Testimonials
         </h2>
       </div>
 
@@ -58,7 +59,8 @@ export const TestimonialSection = () => {
           {reviewList.map((review) => (
             <CarouselItem
               key={review.name}
-              className="md:basis-1/2 lg:basis-1/3"
+              className="text-lg font-bespokeStencil"
+              // className="md:basis-1/2 lg:basis-1/3"
             >
               <Card className="bg-muted/50 dark:bg-card">
                 <CardContent className="pt-6 pb-0">

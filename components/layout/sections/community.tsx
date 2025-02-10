@@ -1,3 +1,4 @@
+import { styles } from "@/app/styles";
 import DiscordIcon from "@/components/icons/discord-icon";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,7 +11,7 @@ import {
 
 export const CommunitySection = () => {
   return (
-    <section id="community" className="py-12 ">
+		<section id="community" className={`${styles.section} w-full`}>
       <hr className="border-secondary" />
       <div className="container py-20 sm:py-20">
         <div className="lg:w-[60%] mx-auto">
@@ -27,13 +28,13 @@ export const CommunitySection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
-              Join our vibrant Discord community! Connect, share, and grow with
-              like-minded enthusiasts. Click to dive in! 🚀
+              {`Join our vibrant Discord community! Connect, share, and grow with
+              like-minded enthusiasts. Click to dive in! 🚀`}
             </CardContent>
 
             <CardFooter>
               <Button asChild>
-                <a href="https://discord.com/" target="_blank">
+                <a href="https://discord.com/" target="_blank" rel="noreferrer">
                   Join Discord
                 </a>
               </Button>

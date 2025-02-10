@@ -1,3 +1,4 @@
+import { styles } from "@/app/styles";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -42,18 +43,18 @@ const serviceList: ServiceProps[] = [
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="container py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Community
+		<section id="services" className={styles.section}>
+      <h2 className={`text-lg text-primary text-center tracking-wider ${styles.topHeader}`}>
+        Our Community
       </h2>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Who are we for?
+      <h2 className={`text-3xl md:text-4xl text-center font-bold ${styles.bottomHeader}`}>
+        Community Composition
       </h2>
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
+      {/* <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
         From marketing and sales to operations and engineering, we have experts from all walks of life. 
-      </h3>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </h3> */}
+      <div className="grid mt-12 sm:grid-cols-2 lg:grid-cols-3 gap-4" />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
         {serviceList.map(({ title, description, pro }) => (

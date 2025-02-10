@@ -7,18 +7,20 @@ import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { PricingSection } from "@/components/layout/sections/pricing";
 import { ServicesSection } from "@/components/layout/sections/services";
-import { SponsorsSection } from "@/components/layout/sections/sponsors";
+import { TechSection } from "@/components/layout/sections/tech";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
 	title: "DeDevs Club",
-	description: "DeDevs is a community of developers who learn and grow together.",
+	description:
+		"DeDevs is a community of developers who learn and grow together.",
 	openGraph: {
 		type: "website",
 		url: "https://github.com/DeDevsClub/dedevs-landing-page.git",
 		title: "DeDevs Club",
-		description: "DeDevs is a community of developers who learn and grow together.",
+		description:
+			"DeDevs is a community of developers who learn and grow together.",
 		images: [
 			{
 				url: "https://dedevs.club/og-image.png",
@@ -32,26 +34,66 @@ export const metadata = {
 		card: "summary_large_image",
 		site: "https://github.com/DeDevsClub/dedevs-landing-page.git",
 		title: "DeDevs Club",
-		description: "DeDevs is a community of developers who learn and grow together.",
+		description:
+			"DeDevs is a community of developers who learn and grow together.",
 		images: ["https://dedevs.club/og-image.png"],
 	},
 };
 
+interface Page {
+	page: React.ReactNode;
+	name: string;
+}
+
+const pages: Page[] = [
+	{
+		page: <HeroSection />,
+		name: "Hero",
+	},
+	{
+		page: <BenefitsSection />,
+		name: "Benefits",
+	},
+	{
+		page: <TechSection />,
+		name: "Techonologies",
+	},
+	{
+		page: <TestimonialSection />,
+		name: "Testimonials",
+	},
+	{
+		page: <PricingSection />,
+		name: "Pricing",
+	},
+	{
+		page: <FAQSection />,
+		name: "FAQ",
+	},
+	{
+		page: <FooterSection />,
+		name: "Footer",
+	},
+];
+
 export default function Home() {
 	return (
-		<>
-			<HeroSection />
-			{/* <SponsorsSection /> */}
-			{/* <BenefitsSection /> */}
-			{/* <FeaturesSection /> */}
-			 <ServicesSection /> 
-			{/* <TestimonialSection /> */}
-			{/* <TeamSection /> */}
-			{/* <CommunitySection /> */}
-			<PricingSection />
-			{/* <ContactSection /> */}
-			<FAQSection />
-			<FooterSection />
-		</>
+		<div className="">
+			{pages.map((page, index) => (
+				<div
+					key={page.page?.toString()}
+					className={
+						`
+							container ${index % 2 === 0 ? "bg-primary/20" : "bg-black/60"} 
+							rounded-[20px] p-4 border-2 border-primary my-2
+							${page.name === "Footer" ? "h-[18vh] flex items-center justify-center" : ""}
+						`
+						//page.toString() === "PricingSection" ? "bg-primary/20" : "bg-black/60"
+					}
+				>
+					{page.page}
+				</div>
+			))}
+		</div>
 	);
 }

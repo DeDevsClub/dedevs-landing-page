@@ -8,24 +8,32 @@ module.exports = {
 
   content: [
     "./components/**/*.{ts,tsx}",
+    "./components/layout/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./src/**/*.{js, ts,jsx,tsx}",
+    './index.html'
   ],
 
   theme: {
     container: {
       center: true,
       padding: "1.5rem",
-      screens: {
-        "sm": "640px",
-        "md": "768px",
-        "lg": "1024px",
-        "xl": "1280px",
-        "2xl": "1400px",
-        "3xl": "1600px",
-      },
     },
     extend: {
+      screens: {
+        xs: '450px',
+        sm: '640px',
+        md: '768px',
+        xmd: '900px',
+        lg: '1025px',
+        xl: '1280px',
+        '2xl': '1536px',
+        '3xl': '1800px',
+      },
+      boxShadow: {
+        card: '0px 35px 120px -15px #1f1f1f',
+        cardLight: '0px 19px 38px #eaeaec, 0px 15px 12px #eaeaec',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -66,6 +74,7 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        full: "9999px",
       },
       keyframes: {
         "accordion-down": {
@@ -96,7 +105,10 @@ module.exports = {
       nippo: ["Nippo", "sans-serif"],
       nippoBold: ["Nippo Bold", "sans-serif"],
       nippoMedium: ["Nippo Medium", "sans-serif"],
+      bespokeStencil: ["BespokeStencil", "sans-serif"],
+      bespokeStencilBold: ["BespokeStencil Bold", "sans-serif"],
+      bespokeStencilMedium: ["BespokeStencil Medium", "sans-serif"],
     },
   },
   plugins: [animate],
-};
+}

@@ -1,3 +1,4 @@
+import { styles } from "@/app/styles";
 import GithubIcon from "@/components/icons/github-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
 import XIcon from "@/components/icons/x-icon";
@@ -56,7 +57,7 @@ export const TeamSection = () => {
   };
 
   return (
-    <section id="team" className="container lg:w-[75%] py-24 sm:py-32">
+		<section id="team" className={`${styles.section} w-full`}>
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           Team
@@ -74,7 +75,7 @@ export const TeamSection = () => {
             index
           ) => (
             <Card
-              key={index}
+              key={`${firstName}-${lastName}`}
               className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
             >
               <CardHeader className="p-0 gap-0">
@@ -94,7 +95,7 @@ export const TeamSection = () => {
               </CardHeader>
               {positions.map((position, index) => (
                 <CardContent
-                  key={index}
+                  key={`${position}`}
                   className={`pb-0 text-muted-foreground ${
                     index === positions.length - 1 && "pb-6"
                   }`}
@@ -107,7 +108,7 @@ export const TeamSection = () => {
               <CardFooter className="space-x-4 mt-auto">
                 {socialNetworks.map(({ name, url }, index) => (
                   <Link
-                    key={index}
+                    key={`${name}-${url}`}
                     href={url}
                     target="_blank"
                     className="hover:opacity-80 transition-all"

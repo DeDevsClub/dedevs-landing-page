@@ -22,6 +22,24 @@ html {
   src: url('../lib/fonts/nippo-medium.otf');
 }
 
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../lib/fonts/bespokeStencil.otf');
+}
+
+@font-face {
+  font-family: 'BespokeStencil Bold';
+  src: url('../lib/fonts/bespokeStencil-bold.otf');
+}
+
+@font-face {
+  font-family: 'BespokeStencil Medium';
+  src: url('../lib/fonts/bespokeStencil-medium.otf');
+}
+
+
+
+
 
 
 /* *=========== Default theme =========== */
@@ -106,20 +124,20 @@ html {
   --primary: 323 97.6% 83.9%;           /* brandPink #feaedf */
   --primary-foreground: 60 9.1% 97.8%;  /* pureWhite #fafaf9 */
 
-  --secondary: 12 6.5% 15.1%;           /* burntBrown #292524 */
+  --secondary: 225 90.2% 75.9%;           /* paleBlue #8aa6f9 */
   --secondary-foreground: 60 9.1% 97.8%;
 
-  --muted: 12 6.5% 15.1%;
+  --muted: 225 90.2% 75.9%;
   --muted-foreground: 24 5.4% 63.9%;
 
-  --accent: 12 6.5% 15.1%;              /* burntBrown #292524 */
+  --accent: 225 90.2% 75.9%;              /* paleBlue #8aa6f9 */
   --accent-foreground: 60 9.1% 97.8%;   /* pureWhite #fafaf9 */
 
   --destructive: 0 72.2% 50.6%;
   --destructive-foreground: 60 9.1% 97.8%;
 
-  --border: 12 6.5% 15.1%;            /* burntBrown #292524 */
-  --input: 12 6.5% 15.1%;             /* burntBrown #292524 */
+  --border: 225 90.2% 75.9%;            /* paleBlue #8aa6f9 */
+  --input: 225 90.2% 75.9%;             /* paleBlue #8aa6f9 */
   --ring: 323 97.6% 83.9%;            /* brandPink #feaedf */
   }
 
@@ -136,20 +154,20 @@ html {
     --primary: 323 97.6% 83.9%;           /* brandPink #feaedf */
     --primary-foreground: 60 9.1% 97.8%;  /* pureWhite #fafaf9 */
 
-    --secondary: 12 6.5% 15.1%;           /* burntBrown #292524 */
+    --secondary: 225 90.2% 75.9%;           /* paleBlue #8aa6f9 */
     --secondary-foreground: 60 9.1% 97.8%;
 
-    --muted: 12 6.5% 15.1%;
+    --muted: 225 90.2% 75.9%;
     --muted-foreground: 24 5.4% 63.9%;
 
-    --accent: 12 6.5% 15.1%;              /* burntBrown #292524 */
+    --accent: 225 90.2% 75.9%;              /* paleBlue #8aa6f9 */
     --accent-foreground: 60 9.1% 97.8%;   /* pureWhite #fafaf9 */
 
     --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 60 9.1% 97.8%;
 
-    --border: 12 6.5% 15.1%;            /* burntBrown #292524 */
-    --input: 12 6.5% 15.1%;             /* burntBrown #292524 */
+    --border: 225 90.2% 75.9%;            /* paleBlue #8aa6f9 */
+    --input: 225 90.2% 75.9%;             /* paleBlue #8aa6f9 */
     --ring: 323 97.6% 83.9%;            /* brandPink #feaedf */
   }
 }
@@ -162,11 +180,11 @@ html {
   box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
