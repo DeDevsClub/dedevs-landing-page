@@ -50,9 +50,9 @@ export const HeroSection = () => {
 				</div>
       </div>
 
-			<div className="hidden sm:relative group bg-primary -mt-[128px] w-full">
+			<div className="relative group bg-primary -mt-[128px] w-full">
 				<div
-					className="hidden sm:absolute top-2 lg:-top-8 left-1/2 transform 
+					className="absolute top-2 lg:-top-8 left-1/2 transform 
             -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"
 				/>
 				<Image
@@ -62,11 +62,32 @@ export const HeroSection = () => {
 					// className="w-full md:w-[1280px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-primary  border-t-primary/30"
           // rounded-t-[20px] 
 					className={`
-              w-screen h-[48rem] flex items-center
+              hidden sm:w-screen h-[48rem] flex items-center
               justify-center border-0 border-primary/100
             `}
 					src={
 						"/assets/images/backgrounds/neon-mesh.png"
+						// "/hero-image.png"
+						// theme === "light"
+						//   ? "/hero-image-light.jpeg"
+						//   : "/hero-image-dark.jpeg"
+					}
+					width={1800}
+					height={1200}
+					alt="dashboard"
+				/>
+				<Image
+					// width={2560}
+					// height={2560}
+					// className="w-full md:w-[1280px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-primary  border-t-primary/30"
+					// className="w-full md:w-[1280px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-primary  border-t-primary/30"
+          // rounded-t-[20px] 
+					className={`
+              w-screen sm:hidden h-[48rem] flex items-center
+              justify-center border-0 border-primary/100
+            `}
+					src={
+						"/logo.png"
 						// "/hero-image.png"
 						// theme === "light"
 						//   ? "/hero-image-light.jpeg"
