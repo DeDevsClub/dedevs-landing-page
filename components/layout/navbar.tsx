@@ -1,6 +1,6 @@
 "use client";
 import { ChevronsDown, Menu } from "lucide-react";
-import React from "react";
+import React, { useEffect } from "react";
 import {
 	Sheet,
 	SheetContent,
@@ -71,19 +71,27 @@ const featureList: FeatureProps[] = [
 ];
 
 export const Navbar = () => {
-	// const [isOpen, setIsOpen] = React.useState(false);
+
 	return (
-		<header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-primary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
-			<Link href="/" className="font-nippo text-xl flex items-center">
-				{/* <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" /> */}
+		<header className="shadow-inner bg-opacity-15 w-[96%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 
+      mx-auto sticky border border-primary z-40 rounded-2xl lg:flex flex flex-row space-x-4
+       lg:justify-between p-2 bg-card justify-end gap-4 text-center items-center">
+			<Link href="/" className="flex font-nippo text-xl flex items-center">
+				{/* <ChevronsDown className="bg-gradient-to-tr border-primary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" /> */}
 				<Image
 					src="/logo.png"
 					alt="DeDevs"
 					width={36}
 					height={36}
-					className="mr-2"
+					className="hidden lg:flex mr-2"
 				/>
-				DeDevs Club
+				<div className="font-bespoke md:font-bespokeBold text-2xl
+          flex flex-row justify-center items-center text-center rounded-lg
+          lg:w-full lg:h-full w-[56vw]
+        ">
+          {'DeDevs Club'}
+				{/* {`${process.env.NODE_ENV === "development" ? screenSize : ""}`} */}
+        </div>
 			</Link>
 			{/* <!-- Mobile --> */}
 			<div className="flex items-center justify-center lg:hidden">
@@ -97,13 +105,13 @@ export const Navbar = () => {
 
 					<SheetContent
 						side="left"
-						className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
+						className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-primary"
 					>
 						<div>
 							<SheetHeader className="mb-4 ml-4">
 								<SheetTitle className="flex items-center">
 									<Link href="/" className="flex items-center">
-										<ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
+										<ChevronsDown className="bg-gradient-to-tr border-primary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
 										DeDevs
 									</Link>
 								</SheetTitle>
@@ -207,7 +215,7 @@ export const Navbar = () => {
 				</NavigationMenuList> */}
 			</NavigationMenu>
 
-			<div className="hidden lg:flex">
+			<div className="flex">
 				<Button asChild size="sm" variant="ghost" aria-label="Follow on X">
 					<Link
 						aria-label="Follow on X"

@@ -10,6 +10,7 @@ import { ServicesSection } from "@/components/layout/sections/services";
 import { TechSection } from "@/components/layout/sections/tech";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
+import { ApplicationsSection } from "@/components/layout/sections/applications";
 
 export const metadata = {
 	title: "DeDevs Club",
@@ -55,8 +56,8 @@ const pages: Page[] = [
 		hideOnMobile: false,
 	},
 	{
-		page: <BenefitsSection />,
-		name: "Benefits",
+		page: <ApplicationsSection />,
+		name: "Applications",
 		bgColor: "bg-black/90",
 		hideOnMobile: false,
 	},
@@ -90,12 +91,12 @@ const pages: Page[] = [
 		bgColor: "bg-black/90",
 		hideOnMobile: false,
 	},
-	{
-		page: <FooterSection />,
-		name: "Footer",
-		bgColor: "bg-black/90",
-		hideOnMobile: false,
-	},
+	// {
+	// 	page: <FooterSection />,
+	// 	name: "Footer",
+	// 	bgColor: "bg-black/90",
+	// 	hideOnMobile: false,
+	// },
 ];
 
 export default function Home() {
@@ -108,7 +109,7 @@ export default function Home() {
 					className={
 						`
 							container ${page.bgColor} 
-							rounded-[20px] p-4 my-2
+							rounded-[12px] p-4 my-2
 							${page.name === "Footer" ? "h-[12vh] bg-black/90 flex items-center justify-center" : ""}
 							${page.hideOnMobile ? "hidden sm:block" : ""}
 						`

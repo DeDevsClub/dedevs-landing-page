@@ -42,7 +42,7 @@ export const CommunitySection = () => {
           </Card>
         </div>
       </div>
-      <hr className="border-secondary" />
+      <hr className="border-primary" />
     </section>
   );
 };

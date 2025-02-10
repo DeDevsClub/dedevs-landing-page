@@ -19,7 +19,7 @@ const FAQList: FAQProps[] = [
     value: "item-1",
   },
   {
-    question: "What makes DeDevs Club unique compared to other tech communities?",
+    question: "What makes DeDevs Club unique?",
     answer:
       "Our community specifically focuses on the intersection of blockchain and AI and we emphasize practical skill development.",
     value: "item-2",
@@ -32,15 +32,20 @@ const FAQList: FAQProps[] = [
     value: "item-3",
   },
   {
-    question: "Do I need to be an expert in both blockchain and AI to join?",
+    question: "Do I need to be an expert to join?",
     answer: "No, many of our members are experts in one field or are simply enthusiasts looking to expand their knowledge.",
     value: "item-4",
   },
   {
     question:
-      "What kind of resources and opportunities does DeDevs Club provide?",
+      "What resources and opportunities are provided?",
     answer: "Networking opportunities, collaborative projects, learning resources, and curated industry updates.",
     value: "item-5",
+  },
+  {
+    question: "How can I get involved with DeDevs Club?",
+    answer: "Join our Discord community and participate in our forums, projects, and events.",
+    value: "item-6",
   },
 ];
 
@@ -48,11 +53,12 @@ export const FAQSection = () => {
   return (
 		<section id="faq" className={`${styles.section} w-full`}>
       <div className="text-center mb-8">
-        <h2 className={`text-lg text-primary text-center mb-2 tracking-wider ${styles.topHeader}`}>
+        {/* tracking-wider */}
+        <h2 className={`${styles.topHeader}`}>
           FAQs
         </h2>
 
-        <h2 className={`text-3xl md:text-4xl text-center font-bold ${styles.bottomHeader}`}>
+        <h2 className={`${styles.bottomHeader}`}>
           Common Questions
         </h2>
       </div>
@@ -60,7 +66,7 @@ export const FAQSection = () => {
       <Accordion type="single" collapsible className="AccordionRoot">
         {FAQList.map(({ question, answer, value }) => (
           <AccordionItem key={value} value={value}>
-            <AccordionTrigger className="text-left text-white font-bold text-xl">
+            <AccordionTrigger className="text-left text-white font-nippo text-xs sm:text-xl">
               {question}
             </AccordionTrigger>
 

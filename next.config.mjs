@@ -31,6 +31,8 @@ const nextConfig = {
       "res.cloudinary.com",
       "cdn.discordapp.com",
       "*.dedevs.club",
+      "canva.com",
+      "*.canva.com",
     ],
   },
 };

@@ -30,7 +30,6 @@ const styles = {
             container py-6 sm:py-8
           `,
 
-  // hover:bg-primary/80 hover:text-white hover:opacity-100 hover:border-secondary hover:m-0.5 
   heroLink: `w-5/6 md:w-full h-5/6 font-bespokeStencil text-2xl w-full 
               group/arrow bg-black/60 text-white rounded-b-[20px]
               border-b-4 border-t-0 border-black
