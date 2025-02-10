@@ -17,22 +17,23 @@ export const HeroSection = () => {
 						<span className="mr-2 text-primary">
 							<Badge
 								variant="outline"
-								className="text-md py-2 px-4 bg-primary/20 text-primary font-nippo"
+								className="text-md py-2 px-4 bg-primary/90 text-black font-nippoBold"
 							>
 								Coming Soon
 							</Badge>
 						</span>
-						<span> Project Roadmap </span>
+						<span> Roadmap </span>
 					</Badge>
 
-					<div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl">
+					<div className="max-w-screen-md mx-auto text-center border-t-8 rounded-t-[20px] p-1 
+          border-primary/30 text-3xl md:text-6xl">
 						<h1>
 							Welcome DeDevs <span className="text-primary">👋🏻</span>
 							{/* <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"> */}
 						</h1>
 					</div>
-					<div className="max-w-screen-md mx-auto text-center md:text-6xl border-2 border-primary rounded-b-[20px] bg-primary">
-						<p className="text-lg sm:text-2xl text-black font-bespokeStencil bg-primary rounded-t-[20px] p-2">
+					<div className="max-w-screen-lg mx-auto text-center md:text-6xl border-2 border-primary rounded-b-[20px] bg-primary">
+						<p className="text-md sm:text-2xl text-black font-bespokeStencil bg-primary rounded-t-[20px] p-2">
 							{`We're a community of passionate builders. Get access to exclusive resources, tutorials, and support.`}
 						</p>
 

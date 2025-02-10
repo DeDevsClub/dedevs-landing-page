@@ -24,7 +24,13 @@ const nextConfig = {
       "avatars.githubusercontent.com",
       "img-v2-prod.whop.com",
       "whop-cdn.com",
-      "whop.com"
+      "whop.com",
+      "x.com",
+      "discord.gg",
+      "discord.com",
+      "res.cloudinary.com",
+      "cdn.discordapp.com",
+      "*.dedevs.club",
     ],
   },
 };

@@ -43,36 +43,58 @@ export const metadata = {
 interface Page {
 	page: React.ReactNode;
 	name: string;
+	bgColor: string;
+	hideOnMobile: boolean;
 }
 
 const pages: Page[] = [
 	{
 		page: <HeroSection />,
 		name: "Hero",
+		bgColor: "bg-black/90",
+		hideOnMobile: false,
 	},
 	{
 		page: <BenefitsSection />,
 		name: "Benefits",
+		bgColor: "bg-black/90",
+		hideOnMobile: false,
 	},
 	{
 		page: <TechSection />,
 		name: "Techonologies",
+		bgColor: "bg-black/90",
+		hideOnMobile: false,
 	},
 	{
 		page: <TestimonialSection />,
 		name: "Testimonials",
+		bgColor: "bg-primary/20",
+		hideOnMobile: true,
 	},
 	{
 		page: <PricingSection />,
 		name: "Pricing",
+		bgColor: "bg-black/90",
+		hideOnMobile: false,
+	},
+	{
+		page: <TeamSection />,
+		name: "Team",
+		bgColor: "bg-black/90",
+		hideOnMobile: true,
 	},
 	{
 		page: <FAQSection />,
 		name: "FAQ",
+		bgColor: "bg-black/90",
+		hideOnMobile: false,
 	},
 	{
 		page: <FooterSection />,
 		name: "Footer",
+		bgColor: "bg-black/90",
+		hideOnMobile: false,
 	},
 ];
 
@@ -82,11 +104,13 @@ export default function Home() {
 			{pages.map((page, index) => (
 				<div
 					key={page.page?.toString()}
+					// border-2 border-primary
 					className={
 						`
-							container ${index % 2 === 0 ? "bg-primary/20" : "bg-black/60"} 
-							rounded-[20px] p-4 border-2 border-primary my-2
-							${page.name === "Footer" ? "h-[18vh] flex items-center justify-center" : ""}
+							container ${page.bgColor} 
+							rounded-[20px] p-4 my-2
+							${page.name === "Footer" ? "h-[12vh] bg-black/90 flex items-center justify-center" : ""}
+							${page.hideOnMobile ? "hidden sm:block" : ""}
 						`
 						//page.toString() === "PricingSection" ? "bg-primary/20" : "bg-black/60"
 					}

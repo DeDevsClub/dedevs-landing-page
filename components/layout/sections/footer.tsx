@@ -9,7 +9,7 @@ import XIcon from "@/components/icons/x-icon";
 export const FooterSection = () => {
 	return (
 		<footer id="footer" className={`${styles.section} w-full`}>
-			<div className="p-10 bg-card border border-secondary rounded-2xl">
+			<div className="p-12 px-8 bg-card w-full rounded-2xl">
 				<div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-x-12 gap-y-8">
 					<div className="col-span-full xl:col-span-2">
 						<Link href="#" className="flex font-bold items-center">
