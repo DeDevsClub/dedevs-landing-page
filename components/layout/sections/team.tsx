@@ -27,7 +27,8 @@ interface SocialNetworkProps {
 export const TeamSection = () => {
   const teamList: TeamProps[] = [
     {
-      imageUrl: "/images/team/val.png",
+    // https://raw.githubusercontent.com/DeDevsClub/dedevs-landing-page/refs/heads/main/public/assets/images/team/val.png
+      imageUrl: "/assets/images/team/val.png",
       firstName: "Val",
       lastName: "Alexander",
       positions: ["Founder", "Blockchain Engineer", "AI Engineer"],
@@ -69,7 +70,7 @@ export const TeamSection = () => {
   };
 
   return (
-		<section id="team" className={`${styles.section}`}>
+    <section id="team" className={`${styles.section}`}>
       <div className="text-center mb-8">
         <h2 className={`${styles.topHeader} text-lg text-primary text-center mb-2 tracking-wider`}>
           Our Founder
@@ -96,7 +97,7 @@ export const TeamSection = () => {
                 <div className="h-[48rem] w-full overflow-hidden">
                   <Image
                     src={imageUrl}
-                    alt=""
+                    alt="Headshot of the DeDevs Founder: Buns Enchantress"
                     width={600}
                     height={600}
                     className="w-full h-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]" />
