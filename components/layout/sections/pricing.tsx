@@ -67,7 +67,7 @@ export const PricingSection = () => {
 			{/* <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
         Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
       </h3> */}
-			<div className="sm:container rounded-[12px] p-6 grid grid-cols-1 sm:grid-cols-2 lg:gap-4 sm:my-8 justify-center">
+			<div className="sm:container rounded-[12px] gap-4 p-6 grid grid-cols-1 sm:grid-cols-2 lg:gap-4 sm:my-8 justify-center">
 				{/* <div className="mt-2 sm:container sm:mx-12 sm:space-x-12 flex flex-col sm:grid sm:grid-cols-2  
         gap-8 sm:grid-cols-2 sm:gap-8 lg:gap-4 w-full sm:w-[84vw] max-w-screen-2xl sm:my-12 justify-center"> */}
 				{plans.map(
